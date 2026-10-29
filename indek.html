@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study HTML Project</title>
+
+    <!-- 1. Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 2. Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light my-4">
+
+    <div class="container my-5" style="max-width: 900px;">
+
+        <!-- Main Header -->
+        <header class="text-center p-5 mb-4 rounded-4 shadow-sm text-white main-header">
+            <h1 class="display-4 fw-bold">HTML Learning Project</h1>
+            <p class="lead text-uppercase tracking-wide mb-0">Master the Building Blocks of the Web</p>
+        </header>
+
+        <!-- Section 1: What is HTML -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">What is HTML?</h2>
+            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.</p>
+
+            <div class="pink-gradient p-3 rounded-3 my-3">
+                <h3 class="h5 fw-bold mb-3">Key Terms</h3>
+                <ul class="mb-0 ps-3">
+                    <li class="mb-1"><b>HyperText:</b> Text with links to other texts.</li>
+                    <li class="mb-1"><b>Markup:</b> The process of adding tags to text to define its structure and meaning.</li>
+                    <li><b>Language:</b> The set of rules and syntax for creating HTML documents.</li>
+                </ul>
+            </div>
+
+            <div class="sub-section border-start border-4 border-primary ps-3 my-2">
+                <h4 class="h6 fw-bold mb-1">How HTML Works</h4>
+                <p class="text-secondary mb-0">HTML uses tags to define elements that are enclosed in angle brackets.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Basic HTML Structure -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">Basic HTML Structure</h2>
+            <p>Every HTML Document follows this basic structure:</p>
+            
+            <div class="code-block dark-code bg-dark text-light p-3 rounded-3">
+                <ol class="mb-0 ps-3">
+                    <li class="mb-1"><b>&lt;!DOCTYPE html&gt;:</b> Declares the document type and version of HTML.</li>
+                    <li class="mb-1"><b>&lt;html&gt;:</b> The root element that wraps all content.</li>
+                    <li class="mb-1"><b>&lt;head&gt;:</b> Contains meta-information, title, and links to stylesheets or scripts.</li>
+                    <li><b>&lt;body&gt;:</b> Contains the visible content of the web page.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section 3: Important HTML Tags -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">Important HTML Tags</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-striped align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Tag</th>
+                            <th>Purpose</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;h1&gt; - &lt;h6&gt;</code></td>
+                            <td>Headings (largest to smallest)</td>
+                            <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Paragraph</td>
+                            <td><code>&lt;p&gt;Paragraph text&lt;/p&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;a&gt;</code></td>
+                            <td>Link</td>
+                            <td><code>&lt;a href="url"&gt;Link Text&lt;/a&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;img&gt;</code></td>
+                            <td>Image</td>
+                            <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;div&gt;</code></td>
+                            <td>Container / Section</td>
+                            <td><code>&lt;div&gt;Content&lt;/div&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></td>
+                            <td>List</td>
+                            <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4: HTML Forms -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">HTML Forms</h2>
+            <form class="form-preview">
+                <div class="mb-3">
+                    <label for="name" class="form-label fw-bold">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="contoh@email.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label fw-bold">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary px-4 fw-bold">Submit</button>
+            </form>
+        </section>
+
+        <!-- Section 5: HTML Attributes -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">HTML Attributes</h2>
+            <p>Attributes provide additional information about HTML elements.</p>
+            
+            <div class="pink-gradient p-3 rounded-3 my-2">
+                <h3 class="h5 fw-bold mb-3">Important Attributes</h3>
+                <ul class="mb-0 ps-3">
+                    <li class="mb-1"><b>id:</b> Unique identifier for an element</li>
+                    <li class="mb-1"><b>class:</b> Groups elements for styling</li>
+                    <li class="mb-1"><b>src:</b> Source file for images, videos, etc.</li>
+                    <li class="mb-1"><b>href:</b> URL for links</li>
+                    <li class="mb-1"><b>alt:</b> Alternative text for images</li>
+                    <li><b>style:</b> Inline CSS styling</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 6: Tables in HTML -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">Tables in HTML</h2>
+            <p>Tables organize data in rows and columns:</p>
+            <h3 class="h5 fw-bold mt-3 mb-2">Sample Table:</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Student</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>Mathematics</td>
+                            <td><span class="badge bg-success">A+</span></td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>Bob Smith</td>
+                            <td>Physics</td>
+                            <td><span class="badge bg-info text-dark">B</span></td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>Carol Davis</td>
+                            <td>Chemistry</td>
+                            <td><span class="badge bg-success">A</span></td>
+                            <td>Passed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 7: Practice Exercises -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">Practice Exercises</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-3 bg-light rounded-3 border-start border-4 border-info h-100">
+                        <h4 class="h5 fw-bold mb-3">Beginner Tasks:</h4>
+                        <ol class="ps-3 mb-0">
+                            <li class="mb-1">Create a basic HTML page with a title, heading, and paragraph</li>
+                            <li class="mb-1">Add an image with alt text</li>
+                            <li class="mb-1">Create a list of your favorite movies</li>
+                            <li>Build a simple table with your weekly schedule</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-3 bg-light rounded-3 border-start border-4 border-warning h-100">
+                        <h4 class="h5 fw-bold mb-3">Intermediate Tasks:</h4>
+                        <ol class="ps-3 mb-0">
+                            <li class="mb-1">Create a contact form with different input types</li>
+                            <li class="mb-1">Build a navigation menu with links</li>
+                            <li class="mb-1">Design a simple blog post layout</li>
+                            <li>Create a photo gallery grid</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Development Tools -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h2 class="h3 fw-bold text-dark mb-3">Development Tools</h2>
+            <p>Recommended Tools for Web Development:</p>
+            <div class="pink-gradient p-3 rounded-3">
+                <ul class="mb-0 ps-3">
+                    <li class="mb-1"><b>Text Editors:</b> VS Code, Sublime Text, Atom</li>
+                    <li class="mb-1"><b>Browsers:</b> Chrome DevTools, Firefox Developer Tools</li>
+                    <li class="mb-1"><b>Version Control:</b> Git and GitHub</li>
+                    <li><b>Online Editors:</b> CodePen, JSFiddle, Repl.it</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer Card -->
+        <footer class="footer-card text-center p-4 rounded-4 shadow-sm text-white">
+            <h2 class="h3 fw-bold mb-2">Next Steps in Your Learning Journey</h2>
+            <p class="mb-3 text-white-50">After mastering HTML, continue with CSS (Styling), JavaScript (Interactivity), and Responsive Web Design.</p>
+            <div class="badge bg-light text-dark fs-6 px-3 py-2 fw-semibold">Happy Coding! Built with HTML, CSS &amp; Bootstrap.</div>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>

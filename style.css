@@ -1,0 +1,22 @@
+/* Custom Styling untuk elemen khusus */
+
+/* Main Header Gradient */
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Pink Gradient Box */
+.pink-gradient {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    color: #4a154b;
+}
+
+/* Code Block Styling */
+.dark-code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer Card Gradient */
+.footer-card {
+    background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+}
